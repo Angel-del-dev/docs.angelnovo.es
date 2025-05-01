@@ -33,6 +33,7 @@ aside > ul {
 
 aside > ul > li {
     padding: 10px;
+    border-radius: 5px;
 }
 
 aside > ul > li:hover {
