@@ -1,0 +1,48 @@
+<section id="introduction" caption="Introduction">
+    <h1>Introduction</h1>
+    <p>
+        <code>media.cosasdns.com</code> has been created to allow for easy and secure
+        file managing.
+    </p>
+    <p>
+        There's no <code>Grafical user interface</code> in the latest version (<code>alpha</code>) as the service provided
+        is no more than a simple api.
+    </p>
+    <p>
+        Please refer <b>only</b> to this page for an up to date documentation. 
+    </p>
+</section>
+<section id="important-notes" caption="Important notes">
+    <h1>Important notes</h1>
+    <p>
+        This service is currently on a very early stage and even though the <code>api reference</code> is open to the
+        public, the actual service is private and <b>no</b> <code>user credentials</code> will be provided to anyone outside of the development team.
+    </p>
+    <p>
+        Tickets or issues must be sent through our <code>internal tools</code> until the public release. At which point, this website will
+        contain a <code>form</code> to send those issues.
+    </p>
+</section>
+<section id="auth" caption="Authentication">
+    <h1>Authentication</h1>
+    <p>
+        We use the <code>Bearer Authentication</code> to validate <b>most requests</b>.
+    </p>
+    <p>Authentication steps:</p>
+    <ul>
+        <li>Request to <code>/login</code></li>
+        <li>If the login process is correct, it will return a <code>one time use token</code></li>
+        <li>All requests <b>must</b> contain the given <code>token</code> in a header</li>
+        <li>The format of the header must be <code>Authorization: Bearer <i>one-time-usetoken</i></code></li>
+        <li>If the request is correct, a new <code>One time use token</code> will be returned</li>
+    </ul>
+</section>
+<section id="docs" caption="Route docs">
+    <h1>Route documentation</h1>
+    <p>
+        This page will contain the <code>documentation</code> for all of our public endpoints.
+    </p>
+    <p>
+        It will be assumed however, the requests are pointing to our server located at <code>media.cosasdns.com</code>
+    </p>
+</section>
