@@ -46,3 +46,15 @@
         It will be assumed however, the requests are pointing to our server located at <code>media.cosasdns.com</code>
     </p>
 </section>
+<section id="resource-obtaining" caption="Get resource">
+    <h1>Obtaining a resource</h1>
+    <h2><code>GET</code><code>/{string:resource_id}{optional string:extension}</code></h2>
+    <p><code>@param string:resource_id</code> Unique identifier of the file</p>
+    <p><code>@param optional-string:extension</code> If the extension is given, the api will return the apropiate headers</p>
+    <p><code>@returns resource</code></p>
+    <span class='comment'>
+        <b>[Note]</b> This endpoint can be used in <code>img</code>, <code>picture</code> and <code>video</code> tags.
+        <br />
+        For example, it can be used as: <code>&lt;img src="media.cosasdns.com/logo.png"/&gt;</code>
+    </span>
+</section>
