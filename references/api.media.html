@@ -46,6 +46,15 @@
         It will be assumed however, the requests are pointing to our server located at <code>media.cosasdns.com</code>
     </p>
 </section>
+
+<section id="token" caption="Get a token">
+    <h1>Get a token</h1>
+    <h2><code>POST</code><code>/api/login</code></h2>
+    <p><code>@param string:username</code> Name of the user to authenticate</p>
+    <p><code>@param string:password</code> Password in raw text without any formatting</p>
+    <p><code>@returns object containing a one time use token</code></p>
+</section>
+
 <section id="resource-obtaining" caption="Get resource">
     <h1>Obtaining a resource</h1>
     <h2><code>GET</code><code>/{string:resource_id}{optional string:extension}</code></h2>
