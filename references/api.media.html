@@ -52,7 +52,7 @@
     <h2><code>POST</code><code>/api/login</code></h2>
     <p><code>@param string:username</code> Name of the user to authenticate</p>
     <p><code>@param string:password</code> Password in raw text without any formatting</p>
-    <p><code>@header Content-Type: application/json</code></p>
+    <p><code>@header Content-Type: application/json</code> This header needs to be set</p>
     <p><code>@returns object containing a one time use token</code></p>
 </section>
 
@@ -66,5 +66,16 @@
         <b>[Note]</b> This endpoint can be used in <code>img</code>, <code>picture</code> and <code>video</code> tags.
         <br />
         For example, it can be used as: <code>&lt;img src="media.cosasdns.com/logo.png"/&gt;</code>
+    </span>
+</section>
+
+<section id="add-resource-from-string" caption="Add resource string">
+    <h1>Add Resource from a string</h1>
+    <h2><code>POST</code><code>/file/add-from-string</code></h2>
+    <p><code>@param string:filestring</code> Raw file contents as a string</p>
+    <p><code>@param string:mimetype</code> The mimetype of the given filestring</p>
+    <p><code>@header Content-Type: application/json</code> This header needs to be set</p>
+    <span class='comment'>
+        <b>[Note]</b> <i>filestring</i> must be the actual contents of the file.
     </span>
 </section>
