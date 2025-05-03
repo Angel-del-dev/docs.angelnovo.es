@@ -3,7 +3,7 @@ import { createReference } from "./modules/Reference.js";
 
 const obtain_docs = async () => {
     const Html = await fetch(
-        `/references/api.media.html`
+        `/references/api.media.html?ts=${new Date().getTime()}`
     ).then(r => r.text())
         .then(r => r);
 
