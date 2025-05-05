@@ -79,3 +79,26 @@
         <b>[Note]</b> <i>filestring</i> must be the actual contents of the file.
     </span>
 </section>
+
+<section id="get-all-from-domain" caption="Get all">
+    <h1>Get all resources from a domain</h1>
+    <h2><code>GET</code><code>/file/all</code></h2>
+    <p><code>@header Content-Type: application/json</code> This header needs to be set</p>
+    <p><code>@returns []string</code></p>
+</section>
+
+<section id="filter-by-type" caption="Filter by type">
+    <h1>Get all the resources from a filter</h1>
+    <h2><code>GET</code><code>/file/all-from-type/{string:type}</code></h2>
+    <p><code>@header Content-Type: application/json</code> This header needs to be set</p>
+    <p><code>@param string:type</code> Filter</p>
+    <p><code>@returns []string</code></p>
+    <span class='comment'>
+        <b>[Note]</b> The type is basically a part of the mimetype for example: "<i>image/png</i>". <br />
+        It filters by searching the type both before and after the '/' separator
+        <br />
+        It means that both '/file/all-from-type/image' and '/file/all-from-type/png' are correct. <br />
+        Whilst the first example can be used for a more generic catalog, the second one is better suited <br />
+        when looking for a specific type of resource
+    </span>
+</section>
