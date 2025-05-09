@@ -102,3 +102,12 @@
         when looking for a specific type of resource
     </span>
 </section>
+<section id="remove-resource" caption="Unlink resource">
+    <h1>Unlink a resource</h1>
+    <h2><code>DELETE</code><code>/file/unlink/{string:file}</code></h2>
+    <p><code>@header Content-Type: application/json</code> This header needs to be set</p>
+    <span class='comment'>
+        <b>[Note]</b> The endpoint only removes the link between the resource and the domain unless there's no more
+        domains linked to the resource, in which case it removes the resource completely
+    </span>
+</section>
